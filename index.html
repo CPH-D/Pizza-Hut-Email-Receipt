@@ -13,7 +13,16 @@
 
     <style>
         @media only screen and (min-width: 750px){
-            .break{
+            .date-break{
+                display: none;
+            }
+            .break-point{
+                display: none;
+            }
+            .mq-order-date{
+                display: none;
+            }
+            .mq-ingredients{
                 display: none;
             }
         }
@@ -21,38 +30,56 @@
         @media only screen and (max-width: 750px){
             .email-container{
                 width: 100%;
-            }            
-            .break{
+            }
+            .date-break{
+                display: none;
+            }
+            .mq-order-date{
+                display: none;
+            }
+            .break-point{
+                display: none;
+            }
+            .desktop-ingredients{
                 display: none;
             }
         }
-
-        /* @media only screen and (max-width: 600px){
-            .email-container{
-                width: 100%;
-            }
-        } */
 
         @media only screen and (max-width: 565px){
             .email-container{
                 width: 100%;
             }
+            .date-break{
+                display: none;
+            }
             .covid-statement{
                 line-height: 1.5;
                 padding: 0 6%;
             }
-            .email-container .container .footer-text{
-                padding: 20px 40px 40px;
-            }
+            .desktop-ingredients{
+                display: none;
+            }         
         }
 
         @media only screen and (max-width: 375px){
             .email-container{
                 width: 100%;
             }
+            .date-break{
+                display: unset;
+            }
             .covid-statement{
                 line-height: 1.5;
                 padding: 0 6%;
+            }
+            .desktop-ingredients{
+                display: none;
+            }
+            .email-container .container .footer-image{
+                padding: 0;
+            }
+            .email-container .container .footer-container .footer-text{
+                padding: 20px 40px 40px;
             }
         }
     </style>
@@ -69,7 +96,7 @@
                     
                     <!-- start of pizza hut header logo -->
                     <tr>
-                        <td class="container" align="center">
+                        <td class="header-logo" align="center">
                             <img src="https://raw.githubusercontent.com/CPH-D/Pizza-Hut-Email-Receipt/main/img/production/pizza-hut-header-logo.png" style="width: 350px; cursor: pointer;">
                         </td>
                     </tr>
@@ -85,8 +112,8 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="font-family: 'Roboto', sans-serif; text-align: center; color: #fff; padding-bottom: 25px; text-transform: uppercase; font-size: 34pt; padding: 15px 0 30px;">
-                                        <span>June 20, <br class="break"> 5:45 pm</span>
+                                    <td class="order-date-container" style="font-family: 'Roboto', sans-serif; text-align: center; color: #fff; padding-bottom: 25px; text-transform: uppercase; font-size: 34pt; padding: 15px 0 30px;">
+                                        June 20, <span class="date-break"><br></span> 5:45 pm
                                     </td>
                                 </tr>
                             </table>
@@ -170,9 +197,7 @@
                                                     <span style="font-size: 12pt; font-weight: bold">
                                                         Your Order - <span style="color: #fed75f">0123456789012345678901234</span> <br>
                                                     </span>
-                                                    <span>
-                                                        Placed on June 20 at 5:45 PM
-                                                    </span>
+                                                    Placed on June 20 at 5:45 PM
                                                 </td>
                                             </tr>
                                         </table>
@@ -195,13 +220,21 @@
                                                                         </td>
                                                                     </tr>
                                                                 </table>
-                                                                <table>
+                                                                <table style="line-height: 0.5; padding-top: 5px">
                                                                     <tr>
                                                                         <td width="8px"></td>
                                                                         <td>
                                                                             Whole Ingredients:
                                                                         </td>
-                                                                        <td>
+                                                                        <td class="desktop-ingredients">
+                                                                            Classic Marinara Sauce, Bacon, Pepperoni, Italian Sausage
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <table class="mq-ingredients" style="line-height: 0.5; padding-bottom: 2px">
+                                                                    <tr>
+                                                                        <td width="8px"></td>
+                                                                        <td style="line-height: 1.5;">
                                                                             Classic Marinara Sauce, Bacon, Pepperoni, Italian Sausage
                                                                         </td>
                                                                     </tr>
@@ -276,25 +309,25 @@
 
                                 <!-- start of footer container -->
                                 <tr>
-                                    <td style="padding: 0 40px 40px">
+                                    <td class="footer-image" style="padding: 0 40px 40px">
                                         <img width="100%" src="https://raw.githubusercontent.com/CPH-D/Pizza-Hut-Email-Receipt/main/img/production/rewards-image.jpg" style="cursor: pointer;">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="padding: 0 40px 40px">
+                                    <td class="footer-image" style="padding: 0 40px 40px">
                                         <img width="100%" src="https://raw.githubusercontent.com/CPH-D/Pizza-Hut-Email-Receipt/main/img/production/deals-image.jpg" style="cursor: pointer;">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="padding: 0 40px 40px">
+                                    <td class="footer-image" style="padding: 0 40px 40px">
                                         <img width="100%" src="https://raw.githubusercontent.com/CPH-D/Pizza-Hut-Email-Receipt/main/img/production/learn-more-image.jpg" style="cursor: pointer;">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <table class="footer-text" align="center" cellspacing="0" cellpadding="0" border="0"  style="font-family: open_sans,sans-serif; font-size: 10pt; line-height: 1.5; padding: 20px 70px 40px;">
+                                        <table class="footer-container" align="center">
                                             <tr>
-                                                <td>
+                                                <td  class="footer-text" align="left" cellspacing="0" cellpadding="0" border="0"  style="font-family: open_sans,sans-serif; font-size: 10pt; line-height: 1.5; padding: 20px 70px 40px;">
                                                     Please Note: The Estimated Time listed above is an automatically generated approximation of when your order may be ready. If you require a more exact estimate of when your order will be ready, we recommend that you call your Pizza Hut restaurant directly. The Pizza Hut name, logos and related marks are trademarks of Pizza Hut, LLC. Third party trademarks are owned by the respective parties. <br> <br>
         
                                                     2021 Pizza Hut, LLC., 7100 Corporate Drive, Plano, TX, 75024, USA.
