@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,79 +8,95 @@
 
     <title>Pizza Hut Receipt</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"/> -->
 
     <style>
-        @media only screen and (min-width: 750px){
-            .date-break{
+        @media only screen and (min-width: 750px) {
+            .date-break {
                 display: none;
             }
-            .break-point{
+
+            .break-point {
                 display: none;
             }
-            .mq-order-date{
+
+            .mq-order-date {
                 display: none;
             }
-            .mq-ingredients{
+
+            .mq-ingredients {
                 display: none;
             }
         }
 
-        @media only screen and (max-width: 750px){
-            .email-container{
+        @media only screen and (max-width: 750px) {
+            .email-container {
                 width: 100%;
             }
-            .date-break{
+
+            .date-break {
                 display: none;
             }
-            .mq-order-date{
+
+            .mq-order-date {
                 display: none;
             }
-            .break-point{
+
+            .break-point {
                 display: none;
             }
-            .desktop-ingredients{
+
+            .desktop-ingredients {
                 display: none;
             }
         }
 
-        @media only screen and (max-width: 565px){
-            .email-container{
+        @media only screen and (max-width: 565px) {
+            .email-container {
                 width: 100%;
             }
-            .date-break{
+
+            .date-break {
                 display: none;
             }
-            .covid-statement{
+
+            .covid-statement {
                 line-height: 1.5;
                 padding: 0 6%;
             }
-            .desktop-ingredients{
+
+            .desktop-ingredients {
                 display: none;
-            }         
+            }
         }
 
-        @media only screen and (max-width: 375px){
-            .email-container{
+        @media only screen and (max-width: 375px) {
+            .email-container {
                 width: 100%;
             }
-            .date-break{
+
+            .date-break {
                 display: unset;
             }
-            .covid-statement{
+
+            .covid-statement {
                 line-height: 1.5;
                 padding: 0 6%;
             }
-            .desktop-ingredients{
+
+            .desktop-ingredients {
                 display: none;
             }
-            .email-container .container .footer-image{
+
+            .email-container .container .footer-image {
                 padding: 0;
             }
-            .email-container .container .footer-container .footer-text{
-                padding: 20px 40px 40px;
+
+            .email-container .footer-container .footer-text {
+                padding: 10px 40px 40px !important;
             }
         }
     </style>
@@ -93,11 +110,12 @@
             <td>
                 <!-- start of container -->
                 <table class="email-container" width="750" align="center" cellspacing="0" cellpadding="0" border="0">
-                    
+
                     <!-- start of pizza hut header logo -->
                     <tr>
                         <td class="header-logo" align="center">
-                            <img src="https://raw.githubusercontent.com/CPH-D/Pizza-Hut-Email-Receipt/main/img/production/pizza-hut-header-logo.png" style="width: 350px; cursor: pointer;">
+                            <img src="https://raw.githubusercontent.com/CPH-D/Pizza-Hut-Email-Receipt/main/img/production/pizza-hut-header-logo.png"
+                                style="width: 350px; cursor: pointer;">
                         </td>
                     </tr>
                     <!-- end of pizza hut header logo -->
@@ -105,14 +123,17 @@
                     <!-- start of thank you subject/date -->
                     <tr>
                         <td>
-                            <table class="container" width="100%" align="center" cellspacing="0" cellpadding="0" border="0"  style="background-color: #555; border-spacing: 2px;">
+                            <table class="container" width="100%" align="center" cellspacing="0" cellpadding="0"
+                                border="0" style="background-color: #555; border-spacing: 2px;">
                                 <tr>
-                                    <td style="font-family: 'Roboto', sans-serif; text-align: center; color: #fff; padding-top: 25px;">
+                                    <td
+                                        style="font-family: 'Roboto', sans-serif; text-align: center; color: #fff; padding-top: 25px;">
                                         <span>Thanks, Chris. Your order will be delivered on</span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="order-date-container" style="font-family: 'Roboto', sans-serif; text-align: center; color: #fff; padding-bottom: 25px; text-transform: uppercase; font-size: 34pt; padding: 15px 0 30px;">
+                                    <td class="order-date-container"
+                                        style="font-family: 'Roboto', sans-serif; text-align: center; color: #fff; padding-bottom: 25px; text-transform: uppercase; font-size: 34pt; padding: 15px 0 30px;">
                                         June 20, <span class="date-break"><br></span> 5:45 pm
                                     </td>
                                 </tr>
@@ -123,8 +144,13 @@
 
                     <!-- start of covid precautions statement -->
                     <tr>
-                        <td class="covid-statement" align="center" height="40px" style="font-family: open_sans,sans-serif; background-color: #e52a33; color: #fff; text-decoration: underline;">
-                            <img src="https://raw.githubusercontent.com/CPH-D/Pizza-Hut-Email-Receipt/main/img/production/alert-icon.png" style="cursor: pointer;"><span style="cursor: pointer;">COVID-19: What we're doing to keep customers and employees safe.</span><img src="https://raw.githubusercontent.com/CPH-D/Pizza-Hut-Email-Receipt/main/img/production/external-link-icon.png" style="cursor: pointer;">
+                        <td class="covid-statement" align="center" height="40px"
+                            style="font-family: open_sans,sans-serif; background-color: #e52a33; color: #fff; text-decoration: underline;">
+                            <img src="https://raw.githubusercontent.com/CPH-D/Pizza-Hut-Email-Receipt/main/img/production/alert-icon.png"
+                                style="cursor: pointer;"><span style="cursor: pointer;">COVID-19: What we're doing to
+                                keep customers and employees safe.</span><img
+                                src="https://raw.githubusercontent.com/CPH-D/Pizza-Hut-Email-Receipt/main/img/production/external-link-icon.png"
+                                style="cursor: pointer;">
                         </td>
                     </tr>
                     <!-- end of covid precautions statement -->
@@ -132,15 +158,18 @@
                     <!-- start of dark container -->
                     <tr>
                         <td>
-                            <table class="container" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #1a1a1a;">
+                            <table class="container" width="100%" align="center" cellspacing="0" cellpadding="0"
+                                border="0" style="background-color: #1a1a1a;">
 
                                 <!-- start of delivery tracker -->
                                 <tr>
                                     <td>
-                                        <table width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 10px 0">
+                                        <table width="100%" align="center" cellspacing="0" cellpadding="0" border="0"
+                                            style="padding: 10px 0">
                                             <tr>
                                                 <td align="center" style="padding: 0 30px">
-                                                    <img src="https://raw.githubusercontent.com/CPH-D/Pizza-Hut-Email-Receipt/main/img/production/delivery-track.jpg" width="100%" style="cursor: pointer;">
+                                                    <img src="https://raw.githubusercontent.com/CPH-D/Pizza-Hut-Email-Receipt/main/img/production/delivery-track.jpg"
+                                                        width="100%" style="cursor: pointer;">
                                                 </td>
                                             </tr>
                                         </table>
@@ -153,10 +182,12 @@
                                     <td style="padding-top: 25px; padding-bottom: 25px;">
                                         <table width="100%">
                                             <tr>
-                                                <td style="font-family: 'Roboto', sans-serif;text-align: center; line-height: 125%; width: 50%">
+                                                <td
+                                                    style="font-family: 'Roboto', sans-serif;text-align: center; line-height: 125%; width: 50%">
                                                     <table align="center" style="margin-bottom: 10px;">
                                                         <tr>
-                                                            <td style="color: #d4a26f; font-size: 14pt; font-weight: bold; text-transform: uppercase;">
+                                                            <td
+                                                                style="color: #d4a26f; font-size: 14pt; font-weight: bold; text-transform: uppercase;">
                                                                 Delivery to
                                                             </td>
                                                         </tr>
@@ -167,10 +198,12 @@
                                                         (661) 123-4567
                                                     </span>
                                                 </td>
-                                                <td style="font-family: 'Roboto', sans-serif;text-align: center; line-height: 125%; width: 50%">
+                                                <td
+                                                    style="font-family: 'Roboto', sans-serif;text-align: center; line-height: 125%; width: 50%">
                                                     <table align="center" style="margin-bottom: 10px;">
                                                         <tr>
-                                                            <td style="color: #d4a26f; font-size: 14pt; font-weight: bold; text-transform: uppercase;">
+                                                            <td
+                                                                style="color: #d4a26f; font-size: 14pt; font-weight: bold; text-transform: uppercase;">
                                                                 Your Pizza Hut
                                                             </td>
                                                         </tr>
@@ -191,11 +224,14 @@
                                 <tr>
                                     <td>
                                         <!-- start of top container -->
-                                        <table width="100%"  align="left" cellspacing="0" cellpadding="0" border="0" style="font-family: open_sans,sans-serif; padding: 15px 30px 0;">
+                                        <table width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
+                                            style="font-family: open_sans,sans-serif; padding: 15px 30px 0;">
                                             <tr>
-                                                <td style="border: 1px solid #555; border-spacing: 0; padding: 10px; line-height: 25px;">
+                                                <td
+                                                    style="border: 1px solid #555; border-spacing: 0; padding: 10px; line-height: 25px;">
                                                     <span style="font-size: 12pt; font-weight: bold">
-                                                        Your Order - <span style="color: #fed75f">0123456789012345678901234</span> <br>
+                                                        Your Order - <span
+                                                            style="color: #fed75f">0123456789012345678901234</span> <br>
                                                     </span>
                                                     Placed on June 20 at 5:45 PM
                                                 </td>
@@ -204,10 +240,12 @@
                                         <!-- end of top container -->
 
                                         <!-- start of middle container -->
-                                        <table width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="font-family: open_sans,sans-serif; padding: 0 30px 0;">
+                                        <table width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
+                                            style="font-family: open_sans,sans-serif; padding: 0 30px 0;">
                                             <tr>
                                                 <td>
-                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border: 1px solid #555; border-spacing: 0; padding: 10px; font-size: 11px; line-height: 15px">
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0"
+                                                        style="border: 1px solid #555; border-spacing: 0; padding: 10px; font-size: 11px; line-height: 15px">
                                                         <tr>
                                                             <td>
                                                                 <table style="line-height: 0.5;">
@@ -227,21 +265,24 @@
                                                                             Whole Ingredients:
                                                                         </td>
                                                                         <td class="desktop-ingredients">
-                                                                            Classic Marinara Sauce, Bacon, Pepperoni, Italian Sausage
+                                                                            Classic Marinara Sauce, Bacon, Pepperoni,
+                                                                            Italian Sausage
                                                                         </td>
                                                                     </tr>
                                                                 </table>
-                                                                <table class="mq-ingredients" style="line-height: 0.5; padding-bottom: 2px">
+                                                                <table class="mq-ingredients"
+                                                                    style="line-height: 0.5; padding-bottom: 2px">
                                                                     <tr>
                                                                         <td width="8px"></td>
                                                                         <td style="line-height: 1.5;">
-                                                                            Classic Marinara Sauce, Bacon, Pepperoni, Italian Sausage
+                                                                            Classic Marinara Sauce, Bacon, Pepperoni,
+                                                                            Italian Sausage
                                                                         </td>
                                                                     </tr>
                                                                 </table>
                                                                 <table>
                                                                     <tr>
-                                                                        <td width="8px" ></td>
+                                                                        <td width="8px"></td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
@@ -265,7 +306,7 @@
                                                                         </td>
                                                                     </tr>
                                                                 </table>
-                                                                <table>                                                                    
+                                                                <table>
                                                                     <tr>
                                                                         <td style="font-size: 12px; padding-top: 20px">
                                                                             Delivery Instructions:
@@ -276,14 +317,16 @@
                                                         </tr>
                                                     </table>
                                                 </td>
-                                            </tr>                                            
+                                            </tr>
                                         </table>
                                         <!-- end of middle container -->
 
                                         <!-- start of bottom container -->
-                                        <table width="100%"  align="left" cellspacing="0" cellpadding="0" border="0" style="font-family: open_sans,sans-serif; padding: 0 30px;">
+                                        <table width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
+                                            style="font-family: open_sans,sans-serif; padding: 0 30px;">
                                             <tr>
-                                                <td style="border: 1px solid #555; border-spacing: 0; padding: 10px; line-height: 25px;">
+                                                <td
+                                                    style="border: 1px solid #555; border-spacing: 0; padding: 10px; line-height: 25px;">
                                                     <span style="font-size: 12pt; font-weight: bold">
                                                         Order Total: <span style="color: #fed75f">$24.79</span> <br>
                                                     </span>
@@ -293,11 +336,13 @@
                                         <!-- end of bottom container -->
 
                                         <!-- start of payment method -->
-                                        <table width="100%"  align="left" cellspacing="0" cellpadding="0" border="0" style="font-family: open_sans,sans-serif; padding: 0 30px;">
+                                        <table width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
+                                            style="font-family: open_sans,sans-serif; padding: 0 30px;">
                                             <tr>
                                                 <td style="padding: 10px; padding: 50px 10px 25px;">
                                                     <span style="font-size: 12pt; font-weight: bold">
-                                                        Payment Method: <span style="color: #fed75f">Credit Card</span> <br>
+                                                        Payment Method: <span style="color: #fed75f">Credit Card</span>
+                                                        <br>
                                                     </span>
                                                 </td>
                                             </tr>
@@ -307,36 +352,56 @@
                                 </tr>
                                 <!-- end of order container -->
 
-                                <!-- start of footer container -->
+                                <!-- start of footer images -->
                                 <tr>
                                     <td class="footer-image" style="padding: 0 40px 40px">
-                                        <img width="100%" src="https://raw.githubusercontent.com/CPH-D/Pizza-Hut-Email-Receipt/main/img/production/rewards-image.jpg" style="cursor: pointer;">
+                                        <img width="100%"
+                                            src="https://raw.githubusercontent.com/CPH-D/Pizza-Hut-Email-Receipt/main/img/production/rewards-image.jpg"
+                                            style="cursor: pointer;">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="footer-image" style="padding: 0 40px 40px">
-                                        <img width="100%" src="https://raw.githubusercontent.com/CPH-D/Pizza-Hut-Email-Receipt/main/img/production/deals-image.jpg" style="cursor: pointer;">
+                                        <img width="100%"
+                                            src="https://raw.githubusercontent.com/CPH-D/Pizza-Hut-Email-Receipt/main/img/production/deals-image.jpg"
+                                            style="cursor: pointer;">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="footer-image" style="padding: 0 40px 40px">
-                                        <img width="100%" src="https://raw.githubusercontent.com/CPH-D/Pizza-Hut-Email-Receipt/main/img/production/learn-more-image.jpg" style="cursor: pointer;">
+                                        <img width="100%"
+                                            src="https://raw.githubusercontent.com/CPH-D/Pizza-Hut-Email-Receipt/main/img/production/learn-more-image.jpg"
+                                            style="cursor: pointer;">
                                     </td>
                                 </tr>
+                                <!-- end of footer images -->
+                                <!-- start of footer text section -->
                                 <tr>
                                     <td>
-                                        <table class="footer-container" align="center">
+                                        <table class="footer-container" align="center" border="0" cellspacing="0"
+                                            cellpadding="0">
                                             <tr>
-                                                <td  class="footer-text" align="left" cellspacing="0" cellpadding="0" border="0"  style="font-family: open_sans,sans-serif; font-size: 10pt; line-height: 1.5; padding: 20px 70px 40px;">
-                                                    Please Note: The Estimated Time listed above is an automatically generated approximation of when your order may be ready. If you require a more exact estimate of when your order will be ready, we recommend that you call your Pizza Hut restaurant directly. The Pizza Hut name, logos and related marks are trademarks of Pizza Hut, LLC. Third party trademarks are owned by the respective parties. <br> <br>
-        
-                                                    2021 Pizza Hut, LLC., 7100 Corporate Drive, Plano, TX, 75024, USA.
+                                                <td class="footer-text" align="left" cellspacing="0" cellpadding="0"
+                                                    border="0"
+                                                    style="font-family: open_sans,sans-serif; font-size: 10pt; line-height: 1.5; padding: 20px 70px 40px;">
+                                                    Please Note: The Estimated Time listed above is an automatically
+                                                    generated approximation of when your order may be ready. If you
+                                                    require a more exact estimate of when your order will be ready,
+                                                    we
+                                                    recommend that you call your Pizza Hut restaurant directly. The
+                                                    Pizza Hut name, logos and related marks are trademarks of Pizza
+                                                    Hut,
+                                                    LLC. Third party trademarks are owned by the respective parties.
+                                                    <br> <br>
+
+                                                    2021 Pizza Hut, LLC., 7100 Corporate Drive, Plano, TX, 75024,
+                                                    USA.
                                                 </td>
                                             </tr>
-                                        </table>                                        
+                                        </table>
                                     </td>
                                 </tr>
-                                <!-- end of footer container -->
+                                <!-- end of footer text section -->
 
                             </table>
                         </td>
@@ -350,4 +415,5 @@
     </table>
     <!-- end of html email -->
 </body>
+
 </html>
